@@ -1,0 +1,8 @@
+{
+	"BuildId": "78888",
+	"Modules": 
+	{
+		"LegoAbility": "UnrealEditor-LegoAbility.dll",
+		"LegoAbilityEditor": "UnrealEditor-LegoAbilityEditor.dll"
+	}
+}
