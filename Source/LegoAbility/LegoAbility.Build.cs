@@ -1,5 +1,5 @@
 // Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
-
+using System.IO;
 using UnrealBuildTool;
 
 public class LegoAbility : ModuleRules
@@ -7,6 +7,10 @@ public class LegoAbility : ModuleRules
 	public LegoAbility(ReadOnlyTargetRules Target) : base(Target)
 	{
 		PCHUsage = ModuleRules.PCHUsageMode.UseExplicitOrSharedPCHs;
+		if (!File.Exists(Path.Combine(ModuleDirectory, @"Private", @"LegoAbility.cpp")))
+		{
+			bUsePrecompiled = true;
+		}
 
 		PublicDependencyModuleNames.AddRange(
 			new string[]
