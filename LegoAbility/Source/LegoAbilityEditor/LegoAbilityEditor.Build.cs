@@ -8,7 +8,7 @@ namespace UnrealBuildTool.Rules
 		public LegoAbilityEditor(ReadOnlyTargetRules Target) : base (Target)
 		{
 			PCHUsage = ModuleRules.PCHUsageMode.UseExplicitOrSharedPCHs;
-			if (!File.Exists(Path.Combine(ModuleDirectory, @"Private", @"LegoAbility.cpp")))
+			if (!File.Exists(Path.Combine(ModuleDirectory, @"Private", @"LegoAbilityEditor.cpp")))
 			{
 				bUsePrecompiled = true;
 			}
@@ -58,3 +58,4 @@ namespace UnrealBuildTool.Rules
 	}
 
 }
+
